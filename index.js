@@ -11,17 +11,7 @@ app.use(express.static("public")); // Serve static files from public directory
 
 // Basic route
 app.get("/", (req, res) => {
-  res.send(`
-    <html>
-      <head>
-        <title>WebGPU Learning</title>
-      </head>
-      <body>
-        <h1>Welcome to WebGPU Learning Server</h1>
-        <p>Server is running on port ${PORT}</p>
-      </body>
-    </html>
-  `);
+  res.send("index.js");
 });
 
 // API route example
