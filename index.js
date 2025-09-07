@@ -10,18 +10,18 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public")); // Serve static files from public directory
 
 // Basic route
-app.get("/", (req, res) => {
-  res.send("index.js");
-});
+// app.get("/", (req, res) => {
+//   res.sendFile("index.html");
+// });
 
 // API route example
-app.get("/api/status", (req, res) => {
-  res.json({
-    status: "OK",
-    message: "Server is running",
-    timestamp: new Date().toISOString(),
-  });
-});
+// app.get("/api/status", (req, res) => {
+//   res.json({
+//     status: "OK",
+//     message: "Server is running",
+//     timestamp: new Date().toISOString(),
+//   });
+// });
 
 // Start the server
 app.listen(PORT, () => {
