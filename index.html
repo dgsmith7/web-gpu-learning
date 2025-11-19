@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebGPU Simple Examples</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      height: 100%;
+    }
+
+    canvas {
+      display: block;
+      width: 100vh;
+      height: 100%;
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>WebGPU Learning Simple Examples</h1>
+  <p>Canvas below shows results of render pass (render.js)</p>
+  <p>Open browser console for info on device</p>
+  <p>Console also shows results of compute pass</p>
+  <canvas id="webgpu-canvas"></canvas>
+  <script src="render.js"></script>
+  <script src="compute.js"></script>
+</body>
+
+</html>
